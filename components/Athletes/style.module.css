@@ -117,6 +117,7 @@
 				overflow: hidden;
 				backface-visibility: hidden;
 				transition: transform .5s ease;
+				background: var(--coal);
 				@media(min-width: 40em) {
 					width: 22.25rem;
 					padding-bottom: 25.8125rem;
@@ -136,6 +137,8 @@
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
+					opacity: 0;
+					visibility: visible;
 				}
 				div {
 					position: absolute;
@@ -161,6 +164,11 @@
 					text-transform: uppercase;
 					font-weight: 700;
 					margin-top: .75em;
+				}
+			}
+			&.show {
+				img {
+					animation: fadeIn .5s forwards ease;
 				}
 			}
 		}

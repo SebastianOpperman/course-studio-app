@@ -9,9 +9,7 @@ const Athletes = ({title, cards}) => {
 				[active, setActive] = useState(0),
 				[count, setCount] = useState(0),
 				[transform, setTransform] = useState(0),
-				{ ref, inView, entry } = useInView({
-					threshold: .4
-				})
+				{ref, inView} = useInView({threshold: .4, triggerOnce: true})
 
 	const init = () => {
 		const mq = window.matchMedia('(min-width: 40em)')
@@ -33,11 +31,11 @@ const Athletes = ({title, cards}) => {
 	}
 
 	return (
-		<article className={_.athletes}>
-			<h2 ref={ref} id='athletes' className={inView ? _.show : ''}>{title}</h2>
+		<article className={_.athletes} ref={ref}>
+			<h2 id='athletes' className={inView ? _.show : ''}>{title}</h2>
 			<div>
 				{active !== 0 && <button onClick={() => move()} className={_.prev}></button>}
-				<section ref={track} style={{transform: `translateX(${transform}px)`}}>
+				<section ref={track} style={{transform: `translateX(${transform}px)`}} className={inView ? _.show : ''}>
 					{cards.map(({name, sport, image}, k) => (
 						<figure key={k} className={active === k ? _.active : ''}>
 							<div>
