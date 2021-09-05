@@ -1,3 +1,4 @@
+![node-current](https://img.shields.io/node/v/next)
 # React with WordPress Asssesment Task
 
 DEMO: 
