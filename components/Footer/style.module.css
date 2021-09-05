@@ -1,0 +1,30 @@
+@keyframes move {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.footer {
+	background: var(--coal);
+	padding: 1.25em 0;
+	overflow: hidden;
+	div {
+		width: fit-content;
+		display: flex;
+		align-items: center;
+		animation: move 100s linear infinite;
+	}
+	img {
+		width: 5.625em;
+		pointer-events: none;
+		&:not(:last-of-type) {
+			margin-right: 5em;
+			@media(min-width: 40em) {
+				margin-right: 9.375em;
+			}
+		}
+	}
+}

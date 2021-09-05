@@ -1,0 +1,22 @@
+.header {
+	position: absolute;
+	top: 1em;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 77em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+	z-index: 2;
+	@media(min-width: 40em) {
+		top: 2.625em;
+	}
+	> a {
+		display: block;
+		img {
+			width: 7em;
+		}
+	}
+}

@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 
-## Getting Started
+# React with WordPress Asssesment Task
 
-First, run the development server:
+DEMO: 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Overview
+This is an assesment task showcasing a Responsive UI built with React. Here I'm using [NEXT.js](https://nextjs.org/) with my mixture of PostCSS and CSS modules workflow. This workflows keeps the code clean and scalable while also maximizing performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For the data, I'm using a WordPress instance as a headless CMS. I've set up custom endpoints that this app consumes. You can find that repo [here]().
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Required Keys
+The content endpoint url is set on the **WP_ENDPOINT_URL** variable.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Instructions
+- Run `npm install` to install dependancies.
+- Run `npm run dev` to start a local dev server.
+- Run `npm run build` to build the app for production.
+- Run `npm start` to run the app in production.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Structure
 
-## Learn More
+### Pages
+There is only one page under the *pages* directory which is the home page. Each page manages the order of it's components and the fetching of data to feed to the components.
 
-To learn more about Next.js, take a look at the following resources:
+### Components
+Each component is bundled with it's own *module.css* file. This helps style encapsulation via [CSS Modules](https://github.com/css-modules/css-modules). Components get's their data via props from the their pages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### CSS & Public
+The app's global CSS is under *css/global.css*. This sets up global settings like colors and typography which is shares among all components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Images and media can be stores under the *public* directory, which can be accessed via `/example.jpg`.

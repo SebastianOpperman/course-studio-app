@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Graphik;
+  font-weight: 500;
+  font-style: normal;
+  src: url('/graphik-regular.woff2') format("woff2"), url('/graphik-regular.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Graphik;
+  font-weight: 600;
+  font-style: normal;
+  src: url('/graphik-semibold.woff2') format("woff2"), url('/graphik-semibold.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Graphik;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/graphik-bold.woff2') format("woff2"), url('/graphik-bold.woff') format("woff");
+  font-display: swap;
+}
+
+:root {
+	--coal: #1D201F;
+	--stone: #1D201F;
+	--goblin: #449764;
+	--lace: #FEFBF2;
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+html {
+  font-size: 100%;
+	scroll-behavior: auto;
+	-webkit-scroll-behavior: smooth;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	line-height: 1;
+	scroll-behavior: smooth;
+	backface-visibility: hidden;
+	font-weight: 500;
+	color: white;
+	font-family: Graphik, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
