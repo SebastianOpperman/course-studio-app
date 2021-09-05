@@ -2,7 +2,7 @@
 ![npm bundle size](https://img.shields.io/bundlephobia/min/react)
 # React with WordPress Asssesment Task
 
-DEMO: 
+DEMO: https://course-studio-app.vercel.app/
 
 ## Overview
 This is an assesment task showcasing a Responsive UI built with React. Here I'm using [NEXT.js](https://nextjs.org/) with my mixture of PostCSS and CSS modules workflow. This workflows keeps the code clean and scalable while also maximizing performance.
