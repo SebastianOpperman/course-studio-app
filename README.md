@@ -4,7 +4,7 @@
 DEMO: 
 
 ## Overview
-This is an assesment task showcasing a Responsive UI built with React. Here I'm using [NEXT.js](https://nextjs.org/) with my mixture of PostCSS and CSS modules workflow. This workflows keeps the code clean and scalable while also maximizing performance.
+This is an assessment task showcasing a Responsive UI built with React. Here I'm using [NEXT.js](https://nextjs.org/) with my mixture of PostCSS and CSS modules workflow. This workflows keeps the code clean and scalable while also maximizing performance.
 
 For the data, I'm using a WordPress instance as a headless CMS. I've set up custom endpoints that this app consumes. You can find that repo [here]().
 
