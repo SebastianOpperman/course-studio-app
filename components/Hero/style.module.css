@@ -10,6 +10,9 @@
 	position: relative;
 	min-height: 100vh;
 	background: var(--coal);
+	@media(min-width: 90em) and (max-height: 64em) {
+		min-height: 120vh;
+	}
 	&:after {
 		position: absolute;
 		top: 0;
