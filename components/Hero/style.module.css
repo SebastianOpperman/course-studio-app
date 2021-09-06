@@ -8,11 +8,8 @@
 
 .hero {
 	position: relative;
-	min-height: 100vh;
+	height: fit-content;
 	background: var(--coal);
-	@media(min-width: 90em) and (max-height: 64em) {
-		min-height: 120vh;
-	}
 	&:after {
 		position: absolute;
 		top: 0;
@@ -110,9 +107,9 @@
 		margin-top: 3.5rem;
 		margin-bottom: 10em;
 		z-index: 2;
-		@media(min-width: 64em) {
-			margin-top: 10rem;
-			margin-bottom: 0;
+		@media(min-width: 40em) {
+			margin-bottom: 10em;
+			margin-top: 2em;
 		}
 		&:before {
 			position: absolute;
